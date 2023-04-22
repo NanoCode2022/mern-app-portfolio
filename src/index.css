@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+
+@layer base{
+  .section{
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
+
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* background-color: #081b29; */
+  color: #ffffff;
+  background-color: #2D2F33;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.card:hover .card-body{
+  opacity: 1;
+}
+
+.button{
+  @apply py-2 px-8 bg-[#0e0e0e] backdrop-blur-md rounded-lg
+}
+
+.active{
+  color: white;
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
